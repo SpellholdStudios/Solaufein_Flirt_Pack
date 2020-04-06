@@ -1,6 +1,8 @@
 APPEND SOLA
 
-// Sola Initiated Flirts - For SoA
+/* --------------------------------- *
+ *  Sola Initiated Flirts - For SoA  *
+ * --------------------------------- */
 
 IF WEIGHT #-1 ~Global("RPGDisableFlirts","GLOBAL",0)
 Global("RPGSolaStartFlirtSOA","GLOBAL",1)
@@ -12,6 +14,7 @@ GlobalLT("SolaTalk","GLOBAL",11)
 GlobalLT("Chapter","GLOBAL",8)
 
 // Underdark Areas
+// ---------------
 !AreaCheck("AR2100")
 !AreaCheck("AR2101")
 !AreaCheck("AR2102")
@@ -32,27 +35,25 @@ GlobalLT("Chapter","GLOBAL",8)
 THEN BEGIN solainitiatedflirts1
 SAY @0
 = @1
-
-IF ~RandomNum(15,1)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasunglare
-IF ~RandomNum(15,2)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastretch
-IF ~RandomNum(15,3)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair1
-IF ~RandomNum(15,4)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair2
-IF ~RandomNum(15,5)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside1
-IF ~RandomNum(15,6)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO soladreamed
-IF ~RandomNum(15,7)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasongbird
-IF ~RandomNum(15,8)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastare1
-IF ~RandomNum(15,9)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solaembrace1
-IF ~RandomNum(15,10)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solanewsights1
-IF ~RandomNum(15,11)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside2
-IF ~RandomNum(15,12)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solaregret
-IF ~RandomNum(15,13)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry1
-IF ~RandomNum(15,14)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry2
-IF ~RandomNum(15,15)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry3
-IF ~RandomNum(5,1) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside3
-IF ~RandomNum(5,5) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastartled
-IF ~RandomNum(6,2) AreaType(OUTDOOR)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solabutterfly
-IF ~RandomNum(4,3) AreaCheck("AR2500")~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO soladeadlyspider
-
+IF ~RandomNum(19,1)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasunglare
+IF ~RandomNum(19,2)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastretch
+IF ~RandomNum(19,3)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair1
+IF ~RandomNum(19,4)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair2
+IF ~RandomNum(19,5)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside1
+IF ~RandomNum(19,6)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO soladreamed
+IF ~RandomNum(19,7)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasongbird
+IF ~RandomNum(19,8)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastare1
+IF ~RandomNum(19,9)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solaembrace1
+IF ~RandomNum(19,10)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solanewsights1
+IF ~RandomNum(19,11)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside2
+IF ~RandomNum(19,12)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solaregret
+IF ~RandomNum(19,13)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry1
+IF ~RandomNum(19,14)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry2
+IF ~RandomNum(19,15)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry3
+IF ~RandomNum(19,16) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside3
+IF ~RandomNum(19,17) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastartled
+IF ~RandomNum(19,18) AreaType(OUTDOOR)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solabutterfly
+IF ~RandomNum(19,19) AreaCheck("AR2500")~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO soladeadlyspider
 END
 
 IF ~~ THEN BEGIN solasunglare
@@ -188,7 +189,10 @@ SAY @54
 IF ~~ THEN EXIT
 END
 
-// Sola Initiated Flirts - For ToB
+
+/* --------------------------------- *
+ *  Sola Initiated Flirts - For ToB  *
+ * --------------------------------- */
 
 IF WEIGHT #-2 ~Global("RPGDisableFlirts","GLOBAL",0)
 Global("RPGSolaFlirtsStartTOB","GLOBAL",1)
@@ -198,32 +202,29 @@ CombatCounter(0)
 GlobalGT("SolaTalk","GLOBAL",10)
 GlobalLT("SolaTalk","GLOBAL",16)~
 THEN BEGIN solainitiatedflirts2
-
 SAY @201
-
-IF ~RandomNum(19,19)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastretch1
-IF ~RandomNum(19,1)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair1a
-IF ~RandomNum(19,2)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair2a
-IF ~RandomNum(19,3)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside1a
-IF ~RandomNum(19,4)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasongbird1
-IF ~RandomNum(19,5)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastare1a
-IF ~RandomNum(19,6)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside2a
-IF ~RandomNum(19,7)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solanewsights1a
-IF ~RandomNum(19,8)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry1a
-IF ~RandomNum(19,9)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry4a
-IF ~RandomNum(19,10)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasurfcust1a
-IF ~RandomNum(19,11)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solaembrace1a
-IF ~RandomNum(19,12)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouch1a
-IF ~RandomNum(19,13)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasurfcust2a
-IF ~RandomNum(19,14)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouch2a
-IF ~RandomNum(19,15)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solamassage1a
-IF ~RandomNum(19,16)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO soladrinkofwater1
-IF ~RandomNum(19,17)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair3a
-IF ~RandomNum(19,18)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solamassage2a
-IF ~RandomNum(5,1) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasitbeside1a
-IF ~RandomNum(4,2) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasings1
-IF ~RandomNum(3,1) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solaembrace3a
-
+IF ~RandomNum(22,22)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastretch1
+IF ~RandomNum(22,1)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair1a
+IF ~RandomNum(22,2)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair2a
+IF ~RandomNum(22,3)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside1a
+IF ~RandomNum(22,4)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasongbird1
+IF ~RandomNum(22,5)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastare1a
+IF ~RandomNum(22,6)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside2a
+IF ~RandomNum(22,7)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solanewsights1a
+IF ~RandomNum(22,8)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry1a
+IF ~RandomNum(22,9)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solapoetry4a
+IF ~RandomNum(22,10)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasurfcust1a
+IF ~RandomNum(22,11)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solaembrace1a
+IF ~RandomNum(22,12)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouch1a
+IF ~RandomNum(22,13)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasurfcust2a
+IF ~RandomNum(22,14)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouch2a
+IF ~RandomNum(22,15)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solamassage1a
+IF ~RandomNum(22,16)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO soladrinkofwater1
+IF ~RandomNum(22,17)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solatouchhair3a
+IF ~RandomNum(22,18)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solamassage2a
+IF ~RandomNum(22,19) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasitbeside1a
+IF ~RandomNum(22,20) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solasings1
+IF ~RandomNum(22,21) AreaType(FOREST)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solaembrace3a
 END
 
 IF ~~ THEN BEGIN solastretch1
@@ -416,7 +417,9 @@ IF ~~ THEN EXIT
 END
 
 
-// PC Initiated Flirts - For SoA
+/* ------------------------------- *
+ *  PC Initiated Flirts - For SoA  *
+ * ------------------------------- */
 
 IF WEIGHT #-3 ~!Global("RPGSolaStartFlirtSOA","GLOBAL",1)
 !Global("RPGSolaStartFlirtTOB","GLOBAL",1)
@@ -447,8 +450,6 @@ GlobalLT("Chapter","GLOBAL",8)
 THEN BEGIN pcinitflirts1
 SAY @59
 = @60
-
-
 IF ~RandomNum(4,1)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze1
 IF ~RandomNum(4,2)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze3
 IF ~RandomNum(4,3)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze3
@@ -769,7 +770,10 @@ SAY @178
 IF ~~ THEN EXIT
 END
 
-// PC Initiated Flirts - for ToB
+
+/*  ------------------------------ *
+ *  PC Initiated Flirts - for ToB  *
+ * ------------------------------- */
 
 IF WEIGHT #-4 ~!Global("RPGSolaStartFlirtSOA","GLOBAL",1)
 !Global("RPGSolaStartFlirtTOB","GLOBAL",1)
@@ -783,7 +787,6 @@ GlobalGT("Chapter","GLOBAL",7)~
 THEN BEGIN pcinitflirts2
 SAY @61
 = @62
-
 IF ~RandomNum(4,1)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze2a
 IF ~RandomNum(4,2)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze3a
 IF ~RandomNum(4,3)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze4a
@@ -1090,7 +1093,10 @@ SAY @378
 IF ~~ THEN EXIT
 END
 
-//PC Post Nookie Flirts
+
+/* ----------------------- *
+ *  PC Post Nookie Flirts  *
+ * ----------------------- */
 
 IF WEIGHT #-5 ~!Global("RPGSolaStartFlirtSOA","GLOBAL",1)
 !Global("RPGSolaStartFlirtTOB","GLOBAL",1)
@@ -1119,7 +1125,6 @@ GlobalGT("SolaTalk","GLOBAL",15)
 THEN BEGIN pcinitflirtspostnookie
 SAY @63
 = @64
-
 IF ~RandomNum(4,1)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze2b
 IF ~RandomNum(4,2)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze3b
 IF ~RandomNum(4,3)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze4b
@@ -1398,7 +1403,10 @@ SAY @582
 IF ~~ THEN EXIT
 END
 
-// Sola Post Nookie Flirts
+
+/* ------------------------- *
+ *  Sola Post Nookie Flirts  *
+ * ------------------------- */
 
 IF WEIGHT #-1 ~Global("RPGDisableFlirts","GLOBAL",0) 
 Global("RPGSolaNookie","GLOBAL",1)
@@ -1424,9 +1432,7 @@ GlobalGT("SolaTalk","GLOBAL",15)
 !AreaCheck("AR2401")
 !AreaCheck("AR2402")~
 THEN BEGIN solainitpostnookieflirts
-
 SAY @400
-
 IF ~~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastretch1b
 IF ~RandomNum(20,1)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside1b
 IF ~RandomNum(20,2)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solawalkbeside2b
@@ -1594,7 +1600,10 @@ SAY @459
 IF ~~ THEN EXIT
 END
 
-// No flirting in Underdark 
+
+/* -------------------------- *
+ *  No flirting in Underdark  *
+ * -------------------------- */
 
 IF ~Global("RPGDisableFlirts","GLOBAL",0)
 IsGabber(Player1)
@@ -1620,5 +1629,5 @@ AreaCheck("AR2402")~ THEN BEGIN noflirtinunderdark
 SAY @600
 IF ~~ THEN EXIT
 END
-END
 
+END // of APPEND
