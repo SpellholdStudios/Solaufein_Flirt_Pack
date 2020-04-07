@@ -183,6 +183,7 @@ In addition to the methods above for removing individual components, you can com
 - Renamed *setup-rpgsolaflirtpack.tp2* -> *rpgsolaflirtpack.tp2* to support AL|EN's "Project Infinity".
 - Added component `DESIGNATED` number and "*solaufein_flirt_pack*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
+- tp2 file: replaced old-school `DECOMPILE_DLG_TO_D` plus `COMPILE_D_TO_DLG` process with more accurate `DECOMPILE_AND_PATCH` command.
 - Included BWP Fixpack hotfixes:
     - rpgsola.baf: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-10#entry483544">Lollorian's corrected AreaCheck</a>.
 	- rpgsolaflirts.d: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-17#entry488705">Lollorian's corrected AreaCheck</a>.

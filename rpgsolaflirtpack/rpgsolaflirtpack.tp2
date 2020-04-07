@@ -70,9 +70,9 @@ END ELSE BEGIN
 END
 
 COPY_EXISTING ~sola.dlg~ ~override~
- DECOMPILE_DLG_TO_D
- REPLACE_TEXTUALLY "IF ~True()~ THEN BEGIN 130" "IF ~False()~ THEN BEGIN 130"
- COMPILE_D_TO_DLG
+	DECOMPILE_AND_PATCH BEGIN
+		REPLACE_TEXTUALLY "IF ~True()~ \(THEN BEGIN 130\)" "IF ~False()~ \1"
+	END
 
 COMPILE ~rpgsolaflirtpack/rpgsolaflirts.d~
 
