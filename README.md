@@ -184,6 +184,7 @@ In addition to the methods above for removing individual components, you can com
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games and if *Weimer's Solaufein Romance Mod* is not installed.
 - Added component `DESIGNATED` number and "*solaufein_flirt_pack*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
+- Gwendolyne's workaround to fix the no-initiating flirt options when clicking on Solaufein for the first time: not tested in game. :anguished:
 - tp2 file: replaced old-school `DECOMPILE_DLG_TO_D` plus `COMPILE_D_TO_DLG` process with more accurate `DECOMPILE_AND_PATCH` command.
 - Included BWP Fixpack hotfixes:
     - rpgsola.baf: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-10#entry483544">Lollorian's corrected AreaCheck</a>.

@@ -70,13 +70,25 @@ END ELSE BEGIN
 	COPY_EXISTING ~sw1h01.itm~ ~override/rpgsolaflirtpack.rpgd~
 END
 
+/*
+// Gwendolyne's Workaround to fix the no-initiating flirt options when clicking on Solaufein for the first time. Not tested in game.
+// Replaces the old code that was not patching anything:
+// ---------------------------------------------------------------------------------------------------------------------------------
 COPY_EXISTING ~sola.dlg~ ~override~
 	DECOMPILE_AND_PATCH BEGIN
 		REPLACE_TEXTUALLY "IF ~True()~ \(THEN BEGIN 130\)" "IF ~False()~ \1"
 	END
+*/
+OUTER_SET SolaState130 = STATE_WHICH_SAYS 229 IN ~solarom/%s/sola.tra~ FROM SOLA
+ACTION_IF SolaState130 >= 0 BEGIN	// Compiles only in case STATE_WHICH_SAYS throws a valid value
+	<<<<<<<< rpgsolaflirtpack/alter_sola.d
+REPLACE_STATE_TRIGGER sola %SolaState130% ~False()~
+>>>>>>>>
+	COMPILE ~rpgsolaflirtpack/alter_sola.d~ EVALUATE_BUFFER
+END
 
-COMPILE ~rpgsolaflirtpack/files/rpgsolaflirts.d~
+COMPILE EVALUATE_BUFFER ~rpgsolaflirtpack/files/rpgsolaflirts.d~
 
-EXTEND_TOP ~sola.bcs~ ~rpgsolaflirtpack/files/rpgsola.baf~
+EXTEND_TOP ~sola.bcs~ ~rpgsolaflirtpack/files/rpgsola.baf~ EVALUATE_BUFFER 
 
 // EOF: RPG Solaufein Flirt Pack for BG2: SoA and ToB
