@@ -181,6 +181,7 @@ In addition to the methods above for removing individual components, you can com
 #### Version 1.2
 
 - Renamed *setup-rpgsolaflirtpack.tp2* -> *rpgsolaflirtpack.tp2* to support AL|EN's "Project Infinity".
+- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games and if Weimer's Solaufein Romance Mod is not installed.
 - Added component `DESIGNATED` number and "*solaufein_flirt_pack*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
 - tp2 file: replaced old-school `DECOMPILE_DLG_TO_D` plus `COMPILE_D_TO_DLG` process with more accurate `DECOMPILE_AND_PATCH` command.

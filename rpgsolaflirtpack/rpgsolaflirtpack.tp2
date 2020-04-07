@@ -59,14 +59,15 @@ LANGUAGE ~English~
 /* =========================================================== *
  *  The RPG Dungeon Solaufein Flirt Pack for BG2: SoA and ToB  *
  * =========================================================== */
-BEGIN @1
+BEGIN @0
 DESIGNATED 0 LABEL ~solaufein_flirt_pack~
+REQUIRE_PREDICATE GAME_IS ~bg2 tob bgt bg2ee eet~ @1			// ~You must have BG2, ToB, BGT, BG2:EE or EET installed to install the RPG Solaufein Flirt Pack for BG2.~
+REQUIRE_PREDICATE MOD_IS_INSTALLED ~setup-solaufein.tp2~ ~0~ @2	// ~This mod requires the Weimer's Solaufein Romance Mod to be installed.~
 
-ACTION_IF FILE_EXISTS ~override/rpgsolaflirtpack.rpgd~
-THEN BEGIN
-  FAIL @2
+ACTION_IF FILE_EXISTS ~override/rpgsolaflirtpack.rpgd~ BEGIN
+	FAIL @2
 END ELSE BEGIN
-  COPY_EXISTING ~SW1H01.ITM~ ~override/rpgsolaflirtpack.rpgd~
+	COPY_EXISTING ~sw1h01.itm~ ~override/rpgsolaflirtpack.rpgd~
 END
 
 COPY_EXISTING ~sola.dlg~ ~override~

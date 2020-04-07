@@ -1,2 +1,6 @@
-@1 = ~The RPG Solaufein Flirt Pack for BG2 (Rated NC17)~
+@0 = ~The RPG Solaufein Flirt Pack for BG2 (Rated NC17)~
+@1 = ~You must have BG2, ToB, BGT, BG2:EE or EET installed to install the RPG Solaufein Flirt Pack for BG2.~
+@2 = ~This mod requires the Weimer's Solaufein Romance Mod to be installed.~
+/* DEPRECATED as of v1.2
 @2 = ~The Solaufein Flirt Pack is already installed!~
+*/
