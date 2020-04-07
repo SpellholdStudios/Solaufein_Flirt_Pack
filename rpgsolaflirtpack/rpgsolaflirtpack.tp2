@@ -2,9 +2,31 @@
 BACKUP ~rpgsolaflirtpack/backup~
 AUTHOR ~JolythA@hotmail.com~
 
+VERSION ~v1.1~
+
 README ~rpgsolaflirtpack/README-RPGSolaFlirtPack.txt~
 
-VERSION ~v1.1~
+ALWAYS
+
+	/* ---------------------------------------------------------------------------------------------- *
+	 *    Convert strings to UTF-8 for BGEE/BG2EE                                                     *
+	 *    No exception, everything needs to be converted                                              *
+	 * -----------------------------------------------------------------------*---------------------- */
+	ACTION_DEFINE_ARRAY rpg#noconvert BEGIN END
+	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+	ACTION_DEFINE_ARRAY rpg#reload BEGIN setup END
+
+	LAF HANDLE_CHARSETS
+		INT_VAR
+			infer_charsets = 1
+		STR_VAR
+			tra_path = EVAL ~%MOD_FOLDER%/lang~
+			noconvert_array = rpg#noconvert
+			reload_array = rpg#reload
+	END
+
+END
+
 
 AUTO_TRA ~rpgsolaflirtpack/lang/%s~
 
