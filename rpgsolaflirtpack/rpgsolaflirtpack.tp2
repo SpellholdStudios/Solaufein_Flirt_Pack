@@ -1,0 +1,37 @@
+// Version 1.1
+BACKUP ~rpgsolaflirtpack/backup~
+AUTHOR ~JolythA@hotmail.com~
+
+README ~rpgsolaflirtpack/README-RPGSolaFlirtPack.txt~
+
+VERSION ~v1.1~
+
+AUTO_TRA ~rpgsolaflirtpack/lang/%s~
+
+LANGUAGE ~English~
+         ~english~
+		 ~rpgsolaflirtpack/lang/english/setup.tra~
+
+
+/* =========================================================== *
+ *  The RPG Dungeon Solaufein Flirt Pack for BG2: SoA and ToB  *
+ * =========================================================== */
+BEGIN @1
+
+ACTION_IF FILE_EXISTS ~override/rpgsolaflirtpack.rpgd~
+THEN BEGIN
+  FAIL @2
+END ELSE BEGIN
+  COPY_EXISTING ~SW1H01.ITM~ ~override/rpgsolaflirtpack.rpgd~
+END
+
+COPY_EXISTING ~sola.dlg~ ~override~
+ DECOMPILE_DLG_TO_D
+ REPLACE_TEXTUALLY "IF ~True()~ THEN BEGIN 130" "IF ~False()~ THEN BEGIN 130"
+ COMPILE_D_TO_DLG
+
+COMPILE ~rpgsolaflirtpack/rpgsolaflirts.d~
+
+EXTEND_TOP ~sola.bcs~ ~rpgsolaflirtpack/rpgsola.baf~
+
+// EOF: RPG Solaufein Flirt Pack for BG2: SoA and ToB

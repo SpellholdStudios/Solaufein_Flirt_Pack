@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)
 
-<div align="center"><h1>Solaufein Flirt Pack for the Solaufein Romance Modification Pack (WIP)</h1>
+<div align="center"><h1>Solaufein Flirt Pack for the Solaufein Romance Modification (WIP)</h1>
 
 <h3>A mod hosted by Spellhold Studios for Baldur's Gate II: SoA and ToB (classical and EE games),<br>
 Baldur's Gate Trilogy and EET<h3>
@@ -132,15 +132,15 @@ In addition to the methods above for removing individual components, you can com
 
 - Extra special thanks goes to Weimer, who not only sparked the interest in Solaufein, but helped to redefine the Baldur’s Gate world with his creation of WeiDU.
 - Additionally, this flirt pack never would have come about without the interest and dedication of those people who started the idea so many years ago. Since I cannot name all of them, I will simply say thank you to them along with a special acknowledgement to those who put in the time and effort on this project. The RPG Solaufein Crew:
-- Jyzabal: Flirt Writer/Sanity Keeper
-- Noctalys: Flirt Writer/Threat Maker
-- Riviera: Flirt Writer/Nudger
-- Mistress Elysia: Flirt Writer/Ghostly Presence
-- Alatariel: Flirt Writer/Patience Itself
-- Rastor: Omnipresent Authority Figure (even though he is listed last. :P)
-- Thank you very much to the Dark Poetry site <www.darkpoetry.com> and the writers at the site who’s works are included in the pack.
-- <a href="http://www.darkpoetry.com/dp/15097/94685#work">Ascension</a> by MoonMoth.
-- <a href="http://www.darkpoetry.com/dp/12684/94568#work">When the Sunlight Disappears</a> By Red.
+    - Jyzabal: Flirt Writer/Sanity Keeper.
+    - Noctalys: Flirt Writer/Threat Maker.
+    - Riviera: Flirt Writer/Nudger.
+    - Mistress Elysia: Flirt Writer/Ghostly Presence.
+    - Alatariel: Flirt Writer/Patience Itself.
+    - Rastor: Omnipresent Authority Figure (even though he is listed last. :stuck_out_tongue:)
+- Thank you very much to the Dark Poetry site <www.darkpoetry.com> and the writers at the site who’s works are included in the pack:
+    - <a href="http://www.darkpoetry.com/dp/15097/94685#work">Ascension</a> by MoonMoth.
+    - <a href="http://www.darkpoetry.com/dp/12684/94568#work">When the Sunlight Disappears</a> By Red.
 
 ## 
 
@@ -177,13 +177,17 @@ In addition to the methods above for removing individual components, you can com
 #### Version 1.2
 
 
+- Renamed *setup-rpgsolaflirtpack.tp2* -> *rpgsolaflirtpack.tp2* to support AL|EN's "Project Infinity".
 - Included BWP Fixpack hotfixes:
     - rpgsola.baf: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-10#entry483544">Lollorian's corrected AreaCheck</a>.
 	- rpgsolaflirts.d: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-17#entry488705">Lollorian's corrected AreaCheck</a>.
-	- rpgsolaflirts.tra: replaced wrong token *<CHARNAME.>* with *<CHARNAME>* (@433).
-- rpgsolaflirts.tra: got rid of all special characters that cause glitches in a few foreign languages.
-- Lower cased files.
+	- rpgsolaflirts.tra: replaced wrong token *<CHARNAME.>* with *<CHARNAME>.* (@433).
+- rpgsolaflirts.tra: got rid of all special characters that may cause glitches in a few foreign languages.
 - Removed useless backup folder.
+- Reorganized mod architecture tree: created "*lang*" folder to sort files according to their types.
+- Lower cased files.
+- Updated WeiDU installer to v246.
+- Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 ## 
 
