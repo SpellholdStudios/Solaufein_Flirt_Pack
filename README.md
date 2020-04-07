@@ -138,7 +138,7 @@ In addition to the methods above for removing individual components, you can com
     - Mistress Elysia: Flirt Writer/Ghostly Presence.
     - Alatariel: Flirt Writer/Patience Itself.
     - Rastor: Omnipresent Authority Figure (even though he is listed last. :stuck_out_tongue:)
-- Thank you very much to the Dark Poetry site <www.darkpoetry.com> and the writers at the site who’s works are included in the pack:
+- Thank you very much to the <a href="www.darkpoetry.com">Dark Poetry site</a> and the writers at the site who’s works are included in the pack:
     - <a href="http://www.darkpoetry.com/dp/15097/94685#work">Ascension</a> by MoonMoth.
     - <a href="http://www.darkpoetry.com/dp/12684/94568#work">When the Sunlight Disappears</a> By Red.
 
