@@ -181,7 +181,7 @@ In addition to the methods above for removing individual components, you can com
 #### Version 1.2
 
 - Renamed *setup-rpgsolaflirtpack.tp2* -> *rpgsolaflirtpack.tp2* to support AL|EN's "Project Infinity".
-- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games and if Weimer's Solaufein Romance Mod is not installed.
+- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games and if *Weimer's Solaufein Romance Mod* is not installed.
 - Added component `DESIGNATED` number and "*solaufein_flirt_pack*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
 - tp2 file: replaced old-school `DECOMPILE_DLG_TO_D` plus `COMPILE_D_TO_DLG` process with more accurate `DECOMPILE_AND_PATCH` command.
@@ -191,7 +191,7 @@ In addition to the methods above for removing individual components, you can com
 	- rpgsolaflirts.tra: replaced wrong token "*&lt;CHARNAME.&gt;*" with "*&lt;CHARNAME&gt;.*" (@433).
 - rpgsolaflirts.tra: got rid of all special characters that may cause glitches in a few foreign languages.
 - Removed useless backup folder.
-- Reorganized mod architecture tree: created "*lang*" folder to sort files according to their types.
+- Reorganized mod architecture tree: created "*lang*" and "*files*" folders to sort files according to their types.
 - Lower cased files.
 - Updated WeiDU installer to v246.
 - Uploaded mod to official Spellhold Studios GitHub mirror account.

@@ -75,8 +75,8 @@ COPY_EXISTING ~sola.dlg~ ~override~
 		REPLACE_TEXTUALLY "IF ~True()~ \(THEN BEGIN 130\)" "IF ~False()~ \1"
 	END
 
-COMPILE ~rpgsolaflirtpack/rpgsolaflirts.d~
+COMPILE ~rpgsolaflirtpack/files/rpgsolaflirts.d~
 
-EXTEND_TOP ~sola.bcs~ ~rpgsolaflirtpack/rpgsola.baf~
+EXTEND_TOP ~sola.bcs~ ~rpgsolaflirtpack/files/rpgsola.baf~
 
 // EOF: RPG Solaufein Flirt Pack for BG2: SoA and ToB
