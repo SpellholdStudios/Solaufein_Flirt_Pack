@@ -39,6 +39,7 @@ LANGUAGE ~English~
  *  The RPG Dungeon Solaufein Flirt Pack for BG2: SoA and ToB  *
  * =========================================================== */
 BEGIN @1
+DESIGNATED 0 LABEL ~solaufein_flirt_pack~
 
 ACTION_IF FILE_EXISTS ~override/rpgsolaflirtpack.rpgd~
 THEN BEGIN

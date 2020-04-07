@@ -177,11 +177,12 @@ In addition to the methods above for removing individual components, you can com
 #### Version 1.2
 
 - Renamed *setup-rpgsolaflirtpack.tp2* -> *rpgsolaflirtpack.tp2* to support AL|EN's "Project Infinity".
+- Added component `DESIGNATED` number and "*solaufein_flirt_pack*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
 - Included BWP Fixpack hotfixes:
     - rpgsola.baf: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-10#entry483544">Lollorian's corrected AreaCheck</a>.
 	- rpgsolaflirts.d: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-17#entry488705">Lollorian's corrected AreaCheck</a>.
-	- rpgsolaflirts.tra: replaced wrong token "*<CHARNAME.>*" with "*<CHARNAME>.*" (@433).
+	- rpgsolaflirts.tra: replaced wrong token "*&lt;CHARNAME.&gt;*" with "*&lt;CHARNAME&gt;.*" (@433).
 - rpgsolaflirts.tra: got rid of all special characters that may cause glitches in a few foreign languages.
 - Removed useless backup folder.
 - Reorganized mod architecture tree: created "*lang*" folder to sort files according to their types.
