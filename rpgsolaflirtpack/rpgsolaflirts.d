@@ -11,7 +11,7 @@ See(Player1)
 CombatCounter(0)
 GlobalGT("SolaTalk","GLOBAL",5)
 GlobalLT("SolaTalk","GLOBAL",11)
-GlobalLT("Chapter","GLOBAL",8)
+GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
 
 // Underdark Areas
 // ---------------
@@ -429,7 +429,7 @@ IsGabber(Player1)
 CombatCounter(0)
 GlobalGT("SolaTalk","GLOBAL",5)
 GlobalLT("SolaTalk","GLOBAL",11)
-GlobalLT("Chapter","GLOBAL",8)
+GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
 !AreaCheck("AR2100")
 !AreaCheck("AR2101")
 !AreaCheck("AR2102")
@@ -783,7 +783,7 @@ IsGabber(Player1)
 CombatCounter(0)
 GlobalGT("SolaTalk","GLOBAL",10)
 GlobalLT("SolaTalk","GLOBAL",16)
-GlobalGT("Chapter","GLOBAL",7)~
+GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)~
 THEN BEGIN pcinitflirts2
 SAY @61
 = @62

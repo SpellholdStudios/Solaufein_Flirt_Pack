@@ -8,6 +8,7 @@ THEN
 		RealSetGlobalTimer("RPGSolaFlirt","GLOBAL",300)
 END
 
+
 /* ---------------------- *
  *  Fire SoA Sola Flirts  *
  * ---------------------- */
@@ -65,13 +66,14 @@ THEN
 		RealSetGlobalTimer("RPGSolaFlirt","GLOBAL",150)
 END
 
+
 /* ----- *
  *  TOB  *
  * ----- */
 IF
 	Global("RPGSolaFlirtsStartTOB","GLOBAL",0)
 	OR(2)
-		GlobalGT("Chapter","GLOBAL",7)
+		GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)
 		GlobalGT("SolaTalk","GLOBAL",10)
 THEN
 	RESPONSE #100
@@ -87,7 +89,7 @@ IF
 	!StateCheck(Player1,STATE_SLEEPING)
 	GlobalLT("SolaTalk","GLOBAL",16)
 	OR(2)
-		GlobalGT("Chapter","GLOBAL",7)
+		GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)
 		GlobalGT("SolaTalk","GLOBAL",10)
 	See(Player1)
 	!ActuallyInCombat()

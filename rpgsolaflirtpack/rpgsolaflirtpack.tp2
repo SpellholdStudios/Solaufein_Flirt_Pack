@@ -8,21 +8,42 @@ README ~rpgsolaflirtpack/README-RPGSolaFlirtPack.txt~
 
 ALWAYS
 
-	/* ---------------------------------------------------------------------------------------------- *
-	 *    Convert strings to UTF-8 for BGEE/BG2EE                                                     *
-	 *    No exception, everything needs to be converted                                              *
-	 * -----------------------------------------------------------------------*---------------------- */
-	ACTION_DEFINE_ARRAY rpg#noconvert BEGIN END
-	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
-	ACTION_DEFINE_ARRAY rpg#reload BEGIN setup END
+	ACTION_IF NOT VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once per install!
 
-	LAF HANDLE_CHARSETS
-		INT_VAR
-			infer_charsets = 1
-		STR_VAR
-			tra_path = EVAL ~%MOD_FOLDER%/lang~
-			noconvert_array = rpg#noconvert
-			reload_array = rpg#reload
+		// Determines which game is installed and if the game is an Enhanced Edition.
+		OUTER_SET is_eet = (GAME_IS "eet") ? 1 : 0						// eet
+
+
+		/* eet compatibility */
+		ACTION_IF (is_eet) BEGIN
+			OUTER_SET bg2_chapter = 12
+		END ELSE BEGIN
+			OUTER_SET bg2_chapter = 0
+		END
+		OUTER_FOR (i = 1 ; i <= 10 ; ++i) BEGIN
+			OUTER_SET bg2_chapter = bg2_chapter + 1
+			OUTER_SPRINT name_source ~bg2_chapter_%i%~
+			OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+		END
+
+
+		/* ---------------------------------------------------------------------------------------------- *
+		 *    Convert strings to UTF-8 for BGEE/BG2EE                                                     *
+		 *    No exception, everything needs to be converted                                              *
+		 * -----------------------------------------------------------------------*---------------------- */
+		ACTION_DEFINE_ARRAY rpg#noconvert BEGIN END
+		// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+		ACTION_DEFINE_ARRAY rpg#reload BEGIN setup END
+
+		LAF HANDLE_CHARSETS
+			INT_VAR
+				infer_charsets = 1
+			STR_VAR
+				tra_path = EVAL ~%MOD_FOLDER%/lang~
+				noconvert_array = rpg#noconvert
+				reload_array = rpg#reload
+		END
+
 	END
 
 END

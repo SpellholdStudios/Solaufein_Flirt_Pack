@@ -16,7 +16,7 @@ Baldur's Gate Trilogy and EET<h3>
 **Mod Forum:** <a href="http://www.shsforums.net/topic/60737-super-firkraag-updated-to-v16-ee-compatible/">Super Firkraag</a>  
 
 
-[Read the mod's readme](http://spellholdstudios.github.io/readmes/rpgsolaflirt-readme-english.html)
+[Read the mod's readme](http://spellholdstudios.github.io/readmes/rpgsolaflirt-readme-english.txt)
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1257-super-firkraag/).<br>
 
@@ -39,6 +39,10 @@ Baldur's Gate Trilogy and EET<h3>
 This mod is an add-on to one of (perhaps the) first NPC mods for BG2 designed using WeiDU. It adds flirting technology to the Weimer's excellent Solaufein Romance Mod, who shipped without this ability. This should create more enjoyable out of this legendary NPC mod!
 
 For the original Solaufein Romance Mod, which includes all of his background information as Wes originally created it, please visit www.weidu.org. For the original Flirt Pack idea, please visit the Solaufein Forum at www.pocketplane.net.
+
+
+:warning: **Warning: This mod is rated NC17** :innocent:
+
 
 <details><summary>Original note from the author</summary>
 <p>
