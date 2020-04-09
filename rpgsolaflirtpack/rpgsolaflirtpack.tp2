@@ -70,6 +70,10 @@ END ELSE BEGIN
 	COPY_EXISTING ~sw1h01.itm~ ~override/rpgsolaflirtpack.rpgd~
 END
 
+/* STATE.IDS patching to ToB - thanks, Cam, if you read it */
+  /* adds custom IsValidForPartyDialogue state */
+  APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
 /*
 // Gwendolyne's Workaround to fix the no-initiating flirt options when clicking on Solaufein for the first time. Not tested in game.
 // Replaces the old code that was not patching anything:

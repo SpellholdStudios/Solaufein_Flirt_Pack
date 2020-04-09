@@ -1,4 +1,9 @@
 IF
+	InParty(Myself)
+	See(Player1)
+	!ActuallyInCombat()
+	!See([ENEMY])
+	!Range([NEUTRAL],10)
 	Global("RPGSolaFlirtsStart","GLOBAL",0)
 	GlobalGT("SolaTalk","GLOBAL",5)
 	GlobalLT("SolaTalk","GLOBAL",11)
@@ -8,6 +13,62 @@ THEN
 		RealSetGlobalTimer("RPGSolaFlirt","GLOBAL",300)
 END
 
+//outside town?
+IF
+	Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",1)
+	!AreaCheck("AR0700")
+	!AreaCheck("AR0500")
+	!AreaCheck("AR0400")
+	!AreaCheck("AR0300")
+	!AreaCheck("AR0900")
+	!AreaCheck("AR1000")
+	!AreaCheck("AR0020")
+	!AreaCheck("AR1100")
+	!AreaCheck("AR2000")
+	!AreaCheck("AR1600")
+	!AreaCheck("AR5000")
+	!AreaCheck("AR5500")
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	GlobalGT("SolaTalk","GLOBAL",5)
+	GlobalLT("SolaTalk","GLOBAL",11)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("RPGSolaFlirtSOA_Inside Town","GLOBAL",0)
+END
+
+// Detect: inside a town?
+IF
+	Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",0)
+	OR(12)
+		AreaCheck("AR0700")
+		AreaCheck("AR0500")
+		AreaCheck("AR0400")
+		AreaCheck("AR0300")
+		AreaCheck("AR0900")
+		AreaCheck("AR1000")
+		AreaCheck("AR0020")
+		AreaCheck("AR1100")
+		AreaCheck("AR2000")
+		AreaCheck("AR1600")
+		AreaCheck("AR5000")
+		AreaCheck("AR5500")
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	GlobalGT("SolaTalk","GLOBAL",5)
+	GlobalLT("SolaTalk","GLOBAL",11)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("RPGSolaFlirtSOA_Inside Town","GLOBAL",1)
+END
 
 /* ---------------------- *
  *  Fire SoA Sola Flirts  *
@@ -17,9 +78,11 @@ IF
 	Global("RPGDisableFlirts","GLOBAL",0)
 	Global("RPGSolaStartFlirtSOA","GLOBAL",0)
 	InParty(Myself)
-	!StateCheck(Player1,STATE_SLEEPING)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
 	GlobalGT("SolaTalk","GLOBAL",5)
 	GlobalLT("SolaTalk","GLOBAL",11)
+	GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
 	See(Player1)
 	CombatCounter(0)
 	!See([ENEMY])
@@ -49,6 +112,11 @@ THEN
 END
 
 IF
+	InParty(Myself)
+	See(Player1)
+	!ActuallyInCombat()
+	!See([ENEMY])
+	!Range([NEUTRAL],10)
 	RealGlobalTimerExpired("RPGSolaFlirt","GLOBAL")
 	Global("RPGSolaStartFlirtSOA","GLOBAL",1)
 THEN
@@ -59,6 +127,11 @@ THEN
 END
 
 IF
+	InParty(Myself)
+	See(Player1)
+	!ActuallyInCombat()
+	!See([ENEMY])
+	!Range([NEUTRAL],10)
 	RealGlobalTimerExpired("RPGSolaFlirt","GLOBAL")
 	!CombatCounter(0)
 THEN
@@ -71,6 +144,11 @@ END
  *  TOB  *
  * ----- */
 IF
+	InParty(Myself)
+	See(Player1)
+	!ActuallyInCombat()
+	!See([ENEMY])
+	!Range([NEUTRAL],10)
 	Global("RPGSolaFlirtsStartTOB","GLOBAL",0)
 	OR(2)
 		GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)
@@ -86,7 +164,8 @@ IF
 	Global("RPGSolaStartFlirtTOB","GLOBAL",0)
 	Global("RPGDisableFlirts","GLOBAL",0)
 	InParty(Myself)
-	!StateCheck(Player1,STATE_SLEEPING)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
 	GlobalLT("SolaTalk","GLOBAL",16)
 	OR(2)
 		GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)
@@ -103,6 +182,11 @@ THEN
 END
 
 IF
+	InParty(Myself)
+	See(Player1)
+	!ActuallyInCombat()
+	!See([ENEMY])
+	!Range([NEUTRAL],10)
 	RealGlobalTimerExpired("RPGSolaFlirtTOB","GLOBAL")
 	Global("RPGSolaStartFlirtTOB","GLOBAL",1)
 THEN
@@ -111,6 +195,7 @@ THEN
 		RealSetGlobalTimer("RPGSolaFlirtTOB","GLOBAL",1500)
 END
 
+/*
 IF
 	RealGlobalTimerExpired("RPGSolaFlirtTOB","GLOBAL")
 	ActuallyInCombat()
@@ -119,6 +204,7 @@ THEN
 		SetGlobal("RPGSolaStartFlirtTOB","GLOBAL",0)
 		RealSetGlobalTimer("RPGSolaFlirtTOB","GLOBAL",100)
 END
+*/
 
 /* -------- *
  *  Nookie  *
@@ -128,7 +214,8 @@ IF
 	Global("RPGSolaNookie","GLOBAL",0)
 	Global("RPGSolaDisableFlirts","GLOBAL",0)
 	InParty(Myself)
-	!StateCheck(Player1,STATE_SLEEPING)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
 	GlobalGT("SolaTalk","GLOBAL",15)
 	See(Player1)
 	!ActuallyInCombat()
@@ -142,6 +229,11 @@ THEN
 END
 
 IF
+	InParty(Myself)
+	See(Player1)
+	!ActuallyInCombat()
+	!See([ENEMY])
+	!Range([NEUTRAL],10)
 	RealGlobalTimerExpired("RPGSolaNookie","LOCALS")
 	Global("RPGSolaStartFlirtTOB","GLOBAL",1)
 THEN
@@ -151,6 +243,11 @@ THEN
 END
 
 IF
+	InParty(Myself)
+	See(Player1)
+	!ActuallyInCombat()
+	!See([ENEMY])
+	!Range([NEUTRAL],10)
 	RealGlobalTimerExpired("RPGSolaNookie","LOCALS")
 	ActuallyInCombat()
 THEN
@@ -167,7 +264,10 @@ IF
 	!Detect([EVILBUTBLUE])
 	!Detect([NEUTRAL])
 	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
 	See(Player1)
+	!ActuallyInCombat()
 THEN
 	RESPONSE #100
 		SetGlobal("DeadlySpider","GLOBAL",1)
