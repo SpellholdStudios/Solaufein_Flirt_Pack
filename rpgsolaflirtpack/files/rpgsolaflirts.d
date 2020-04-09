@@ -4,10 +4,12 @@ APPEND SOLA
  *  Sola Initiated Flirts - For SoA  *
  * --------------------------------- */
 
-IF WEIGHT #-1 ~Global("RPGDisableFlirts","GLOBAL",0)
-Global("RPGSolaStartFlirtSOA","GLOBAL",1)
+IF WEIGHT #-1 ~Global("RPGSolaStartFlirtSOA","GLOBAL",1)
+/*
+Global("RPGDisableFlirts","GLOBAL",0)
 See(Player1)
-!StateCheck(Player1,STATE_SLEEPING)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
 CombatCounter(0)
 GlobalGT("SolaTalk","GLOBAL",5)
 GlobalLT("SolaTalk","GLOBAL",11)
@@ -31,7 +33,8 @@ GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
 !AreaCheck("AR2210")
 !AreaCheck("AR2400")
 !AreaCheck("AR2401")
-!AreaCheck("AR2402")~
+!AreaCheck("AR2402") */
+~
 THEN BEGIN solainitiatedflirts1
 SAY @0
 = @1
@@ -194,13 +197,15 @@ END
  *  Sola Initiated Flirts - For ToB  *
  * --------------------------------- */
 
-IF WEIGHT #-2 ~Global("RPGDisableFlirts","GLOBAL",0)
-Global("RPGSolaFlirtsStartTOB","GLOBAL",1)
+IF WEIGHT #-2 ~Global("RPGSolaFlirtsStartTOB","GLOBAL",1)
+/*
+Global("RPGDisableFlirts","GLOBAL",0)
 See(Player1)
 !StateCheck(Player1,STATE_SLEEPING)
 CombatCounter(0)
 GlobalGT("SolaTalk","GLOBAL",10)
-GlobalLT("SolaTalk","GLOBAL",16)~
+GlobalLT("SolaTalk","GLOBAL",16) */
+~
 THEN BEGIN solainitiatedflirts2
 SAY @201
 IF ~RandomNum(22,22)~ THEN DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO solastretch1
@@ -450,10 +455,26 @@ GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)
 THEN BEGIN pcinitflirts1
 SAY @59
 = @60
-IF ~RandomNum(4,1)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze1
-IF ~RandomNum(4,2)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze3
-IF ~RandomNum(4,3)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze3
-IF ~RandomNum(4,4)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze1
+IF ~RandomNum(4,1)
+OR(2)
+Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",0)
+Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",2)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze1
+IF ~RandomNum(4,2)
+OR(2)
+Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",0)
+Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",2)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze3
+IF ~RandomNum(4,3)
+OR(2)
+Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",0)
+Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",2)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze3
+IF ~RandomNum(4,4)
+OR(2)
+Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",0)
+Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",2)~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze1
+
+/* hug inside a town - plays once */
+
+IF ~Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",1)~ THEN REPLY @65 DO ~SetGlobal("RPGSolaFlirtSOA_Inside Town","GLOBAL",2) IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze2
 
 IF ~RandomNum(4,1)~ THEN REPLY @66 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO gladjoin1
 IF ~RandomNum(4,2)~ THEN REPLY @66 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO gladjoin2
@@ -490,23 +511,7 @@ IF ~RandomNum(4,2)~ THEN REPLY @72 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1
 IF ~RandomNum(4,3)~ THEN REPLY @72 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO smile3
 IF ~RandomNum(4,4)~ THEN REPLY @72 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO smile4
 
-IF ~RandomNum(4,1)
-OR(12)
-AreaCheck("AR0700")
-AreaCheck("AR0500")
-AreaCheck("AR0400")
-AreaCheck("AR0300")
-AreaCheck("AR0900")
-AreaCheck("AR1000")
-AreaCheck("AR0020")
-AreaCheck("AR1100")
-AreaCheck("AR2000")
-AreaCheck("AR1600")
-AreaCheck("AR5000")
-AreaCheck("AR5500")~ THEN REPLY @65 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO squeeze2
-
-IF ~RandomNum(4,1)
-OR(10)
+IF ~OR(10)
 AreaCheck("AR0704")
 AreaCheck("AR0709")
 AreaCheck("AR0406")
@@ -516,11 +521,13 @@ AreaCheck("AR0021")
 AreaCheck("AR0313")
 AreaCheck("AR1105")
 AreaCheck("AR2010")
-AreaCheck("AR1602")~ THEN REPLY @75 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO drinkoffer
+AreaCheck("AR1602")
+Global("RPGSolaFlirt_75","LOCALS",0)~ THEN REPLY @75 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1) SetGlobal("RPGSolaFlirt_75","LOCALS",1)~ GOTO drinkoffer
 
-IF ~RandomNum(4,1)~ THEN REPLY @77 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO friends
+IF ~~ THEN REPLY @77 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO friends
 
 IF ~~ THEN REPLY @86 EXIT
+COPY_TRANS sola %SolaState130%
 END
 
 IF ~~ THEN BEGIN squeeze1
@@ -830,6 +837,7 @@ IF ~RandomNum(4,4)~ THEN REPLY @80 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1
 //IF ~RandomNum(4,1) AreaCheck("2401")~ THEN REPLY @74 DO ~IncrementGlobal("RPGSolaRandFlirt","LOCALS",1)~ GOTO sexed4a//
 
 IF ~~ THEN REPLY @86 EXIT
+COPY_TRANS sola %SolaState130%
 END
 
 IF ~~ THEN BEGIN squeeze2a
@@ -1204,6 +1212,7 @@ AreaCheck("AR2010")
 AreaCheck("AR1602")~ THEN REPLY @76 DO ~IncrementGlobal("RPGSolaFlirt","GLOBAL",1)~ GOTO bathe3
 
 IF ~~ THEN REPLY @86 EXIT
+COPY_TRANS sola %SolaState130%
 END
 
 IF ~~ THEN BEGIN squeeze2b
