@@ -1,0 +1,2 @@
+Jastey proposal:
+- The PID inside Underdark makes actually no sense. Solaufein tells the PC that because of Drow hirarchy, they should not be close. But: Solaufein cannot be taken into group before Matron Mother isn't cooked and the town is either closed or hostile. So this flirt shows when - after leaving the Drow city and Drow society behind - the player wants to flirt with Solaufein while leaving the Underdark. I don't think it makes sense, and would suggest disabling this - then the area checks in the other PIDs would need to be removed, as well.
