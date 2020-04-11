@@ -22,7 +22,7 @@ Baldur's Gate Trilogy and EET<h3>
 
 &nbsp;
 
-**Note:** This mod was first released at <a href="web.archive.org/web/20120414212350/http://forums.rpgdungeon.net/index.php?board=57.0">RPGDungeon.net</a>. As this site is no more available since many years, it was time to save it from disappearance. It is now hosted at Spellhold Studios with Rastor authorization.
+**Note:** This mod was first released at <a href="http://web.archive.org/web/20120414212350/http://forums.rpgdungeon.net/index.php?board=57.0">RPGDungeon.net</a>. As this site is no more available since many years, it was time to save it from disappearance. It is now hosted at Spellhold Studios with Rastor authorization.
 
 
 &nbsp;
@@ -219,8 +219,8 @@ In addition to the methods above for removing individual components, you can com
 
 #### Version 1.1 (5 December 2010)
 
-- Fixed "No Valid Links or Replies" bug (Thanks cmorgan and Lollorian!).
-- Improved TP2 coding and cleaned up overall file structure.
+- Fixed "*No Valid Links or Replies*" bug (Thanks cmorgan and Lollorian!).
+- Improved tp2 coding and cleaned up overall file structure.
 - Updated WeiDU installer to v224.
 
 ## 
