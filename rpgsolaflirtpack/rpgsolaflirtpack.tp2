@@ -1,6 +1,6 @@
-// Version 1.1
 BACKUP ~rpgsolaflirtpack/backup~
-AUTHOR ~JolythA@hotmail.com~
+//AUTHOR ~JolythA@hotmail.com~
+SUPPORT ~Spellhold Studios at http://www.shsforums.net/forum/127-mod-resurrections/~
 
 VERSION ~v1.1~
 
@@ -12,6 +12,11 @@ ALWAYS
 
 		// Determines which game is installed and if the game is an Enhanced Edition.
 		OUTER_SET is_eet = (GAME_IS "eet") ? 1 : 0						// eet
+
+
+		/* CamDawg's custom IsValidForPartyDialogue() state. Thanks Cam!
+		   covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS, STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING */
+		APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
 
 		/* eet compatibility */
@@ -64,15 +69,12 @@ DESIGNATED 0 LABEL ~solaufein_flirt_pack~
 REQUIRE_PREDICATE GAME_IS ~bg2 tob bgt bg2ee eet~ @1			// ~You must have BG2, ToB, BGT, BG2:EE or EET installed to install the RPG Solaufein Flirt Pack for BG2.~
 REQUIRE_PREDICATE MOD_IS_INSTALLED ~setup-solaufein.tp2~ ~0~ @2	// ~This mod requires the Weimer's Solaufein Romance Mod to be installed.~
 
+/* DEPRECATED as of v1.2
 ACTION_IF FILE_EXISTS ~override/rpgsolaflirtpack.rpgd~ BEGIN
 	FAIL @2
 END ELSE BEGIN
 	COPY_EXISTING ~sw1h01.itm~ ~override/rpgsolaflirtpack.rpgd~
-END
-
-/* STATE.IDS patching to ToB - thanks, Cam, if you read it */
-  /* adds custom IsValidForPartyDialogue state */
-  APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+END*/
 
 /*
 // Gwendolyne's Workaround to fix the no-initiating flirt options when clicking on Solaufein for the first time. Not tested in game.
