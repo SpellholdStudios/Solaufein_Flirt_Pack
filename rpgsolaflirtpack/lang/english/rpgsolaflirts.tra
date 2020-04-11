@@ -160,7 +160,7 @@ sunlight fades.~
 @89  = ~Forgive me <CHARNAME>. I am unused to such... actions.~
 @90  = ~(As you walk along the city streets, you notice a woman not far from you staring at Solaufein in open fear and disgust. She has her small child with her whom she quickly snatches up and carries into the nearby building. When you pass by, you see the curtains being drawn and hear the distinct thud of a bar being placed across the door to secure it from possible entry.)~
 @91  = ~(Taking a good look at your surroundings, you see other people veering away from your path, most crossing the street to get away from you while casting worried looks at the Drow. The actions of the townspeople does not escape Solaufein’s attention, but he says nothing and continues to stare straight ahead as you make your way through town.)~
-@92  = ~ Moving closer to him, you put your arm around him reassuringly, casting a defiant look at a man staring at you from across the alleyway. Solaufein’s own arm finds its way around your waist and he gives you a resigned look.)~
+@92  = ~(Moving closer to him, you put your arm around him reassuringly, casting a defiant look at a man staring at you from across the alleyway. Solaufein’s own arm finds its way around your waist and he gives you a resigned look.)~
 @93  = ~I expect that this will be commonplace from now on. Perhaps I should get a new tunic in order to blend in a bit better. Underdark fashion I so different from the surfacer way of dressing.~
 @94  = ~(You chuckle and pull Sola closer, amazed at his ability to make light of the situation.)~
 @95  = ~(Solaufein seems to be brooding more than usual, if such a thing were possible, so you give him a sweet smile and a gentle hug in an attempt to help him forget his troubles.)~
@@ -170,14 +170,14 @@ sunlight fades.~
 @99  = ~I could hardly decide not to <CHARNAME>. The path I face with you is far less unpleasant than the one I would have faced had I remained among my own kind.~
 @100 = ~(Sola turns to you and, boldly placing a hand against your shoulder, he gazes into your eyes and smiles.) How could I have refused?~
 @101 = ~(Solaufein shakes his head and chuckles as if you have just told him an amusing story)~
-@102 = ~ Here you are thanking me for joining you when it is I who should be thanking you for taking me in. Surfacers are so interesting.~
+@102 = ~Here you are thanking me for joining you when it is I who should be thanking you for taking me in. Surfacers are so interesting.~
 @103 = ~(Wanting to make your elven companion feel welcome, you reach out and catch Solaufein’s hand in yours. He looks over at you curiously, trying to figure out your purpose.)~
 @104 = ~(Smiling back at him, you say nothing and instead give his fingers a squeeze of friendship before releasing his hand once more.)~
 @105 = ~(You notice a thin trickle of blood running down Sola’s forearm and take hold of his hand in order to get a closer look. He quickly snatches his arm away and dismisses your concern with a casual shrug.)~
 @106 = ~Tis nothing to worry about <CHARNAME>. I have suffered far worse than this small scratch.~
 @107 = ~(Realizing what he said, Sola shuts his mouth and turns away uncomfortably.)~
-@108 = ~Forgive me <CARNAME>, but I should have my hands free should I need to cast a spell.~
-@109 = ~(Unused to such displays of affection, Solaaufein is not quite sure how to react.)~
+@108 = ~Forgive me <CHARNAME>, but I should have my hands free should I need to cast a spell.~
+@109 = ~(Unused to such displays of affection, Solaufein is not quite sure how to react.)~
 @110 = ~(First he grasps your hand with all of his fingers on one side of yours. Then he switches them to the other side. He looks at you nervously before trying to switch them once more back to their original position.)~
 @111 = ~(He tries to relax and finally laces his fingers with yours, but he is so limp at that point that it leaves you with the feeling that you are carrying a ragdoll.)~
 @112 = ~(Like a mother hen worrying about her chick, you turn to make certain that Solaufein is settling in with the rest of the group and not feeling uncomfortable being around so many non-Drow.)~
@@ -299,7 +299,7 @@ Nothing and no one will tear us apart.~
 @241 = ~(Giving into exhaustion, you finally call out to your party that it is time to take a break. The recent troubles weighing heavily on your mind, you drop your pack with a thud and, sighing heavily, follow it to the ground.)~
 @242 = ~(Solaufein sits beside you, and tentatively lays a hand on your shoulder.) You are a strong leader, my <PRO_LADYLORD>. I have every confidence you shall emerge triumphant, though exhaustion and despair may dog your heels.~
 @243 = ~(Wordlessly, Solaufein presses two specific spots on your neck. You feel your tension flow away as if it never was, but Solaufein quietly withdraws before you can show your thanks.)~
-@244 = ~(As you turn back around, you notice a single petal drifting slowly through the air before you, finally coming to settle onto your lap. Upon landing, it transforms into a vibrantly colored blossom with dozens of delicate looking petals of varying hues.  You look questioningly over at Solaufein,and although the elf gives no indication of being responsible for the gift, his secretive smile belies his ignorance.)~
+@244 = ~(As you turn back around, you notice a single petal drifting slowly through the air before you, finally coming to settle onto your lap. Upon landing, it transforms into a vibrantly colored blossom with dozens of delicate looking petals of varying hues. You look questioningly over at Solaufein,and although the elf gives no indication of being responsible for the gift, his secretive smile belies his ignorance.)~
 @245 = ~(You are absorbed in your own thoughts, and barely notice Solaufein sit beside you. He looks on you with genuine concern, reaches his hand out as if to touch you, but abruptly pulls away. Sighing angrily at himself, he gets up and leaves you alone to your musings.)~
 @246 = ~(You hear the low sound of a deep voice quietly singing, and as you look around, you realize it is Solaufein, a content smile on his face as the words sigh from his lips.)~
 @247 = ~(Concentrate on what he is singing.)~
@@ -410,8 +410,8 @@ Nothing and no one will tear us apart.~
 @349 = ~Well, I’d assume that perhaps some are, especially in other cultures, but not I. All I’ve had to teach me such things are books.~
 @350 = ~*Snort derisively* I was raised in a keep full of aging, human monks, Solaufein. What I myself have learned, I learned from experience during my travels outside its walls.~
 @351 = ~*Blush in embarrassment* Um... well... er... I, um... I don’t really know anything about it... um... I suppose others may have been taught such things but... I’m not one of them.~
-@352 = ~If one cannot find a teacher, one must teach oneself. Reading is always a good start. ~
-@353 = ~This is new to me. Drow males remain virile even into old age, if they are lucky enough to survive until then. However, if humans do not, I suppose it is logical you would need to travel in order to learn. ~
+@352 = ~If one cannot find a teacher, one must teach oneself. Reading is always a good start.~
+@353 = ~This is new to me. Drow males remain virile even into old age, if they are lucky enough to survive until then. However, if humans do not, I suppose it is logical you would need to travel in order to learn.~
 @354 = ~(Solaufein looks mildly surprised) You have never? Someone so wonderful as you? I can’t see you ever lacking a tutor should you require one. It must have been by choice, then. Perhaps you have not yet found one worthy of you. In any case, I thank you for answering my question.~
 @355 = ~(Sola stops and looks over at you. If he is hurt by your remark, there is no evidence of it in his expression)~
 @356 = ~Very well <CHARNAME>. If that is what you truly wish.~
@@ -550,7 +550,7 @@ Of a demon in my view.~
 @500 = ~(You walk up to Sola and easily wrap your arm about his waist, pulling him toward you. He stiffens for a moment, still unused to such open displays of affection, but relents soon enough, melting within your embrace. His arms slide around you and he rests his chin on your shoulder, breathing in a deep sigh of contentment.)~
 @501 = ~(You remain that way for a moment, simply enjoying the feel of being so close)~
 @502 = ~(Concentrating on scanning his surroundings, Sola does not hear you when you approach. You slip up behind him and ease your arms about his waist, resting your chin against his shoulder, breathing deeply of his fresh clean scent.)~
-@503 = ~(Sola looks over his shoulder at you and smiles warmly.) Ah. It is my beloved, come to brighten my moment with <HIS/HER> presence.~
+@503 = ~(Sola looks over his shoulder at you and smiles warmly.) Ah. It is my beloved, come to brighten my moment with <HISHER> presence.~
 @504 = ~(Turning to face you, he wraps his arms around you, rests his forehead against yours, and begins to stroke your hair.)~
 @505 = ~You are my world <CHARNAME>. A light I desperately needed and can now never get enough of. (He kisses the tip of your nose and squeezes you tightly for a moment before reluctantly releasing you once more)~
 @506 = ~(You move to embrace Sola, and you are unexpectedly swept into his arms. He holds you there for some time, completely at his mercy, as he drags his lips over your cheeks... your eyelids... your lips... He kisses you thoroughly one last time, leaving you breathless before his surprise assault)~
@@ -570,7 +570,7 @@ Of a demon in my view.~
 @520 = ~(It is not long before action follows thought and you are running your lips and tongue down the side of Sola’s moistened neck.~
 @521 = ~(He turns his head toward you, his lips seeking yours and you eagerly give into him. His mouth feels cold at first, a result of his recent drink, but you quickly heat it up again, your tongue exploring his with absolute abandon.)~
 @522 = ~(When you finally bring your gaze back up to Solaufein’s face, you see that he is staring directly at you, an amused look upon his face.)~
-@523 = ~You could have just asked for a drink if you were so thirsty <CHARNAME>. OI would have happily shared with you.~
+@523 = ~You could have just asked for a drink if you were so thirsty <CHARNAME>. I would have happily shared with you.~
 @524 = ~Of course, your way was much more enjoyable.~
 @525 = ~(Your heart skips a beat as you look over to your beloved Drow. In spite of the fear and hatred that is so often associated with his race, you know Sola to be very different from his kin.)~
 @526 = ~(With his compassionate heart and poetic soul, you feel that he has filled an important element that was missing from your life. There is nothing you would not do for him and as long as he is with you, you will make certain that he knows how much he means to you.)~
@@ -587,7 +587,7 @@ Of a demon in my view.~
 @537 = ~(Noticing a bit of dirt on Sola’s face, you reach out to him and carefully wipe at the offending smudge that is marring the elf’s exquisite features. He remains completely still as you tend to your task, hardly daring to move or even breath.)~
 @538 = ~(When you are done, he offers you small smile.) Thank you <CHARNAME>, but I do not see how it really matters seeing as the rest of me is still dirty.~
 @539 = ~(Leaning forward boldly, he stares deeply into your eyes, his tone even and serious.)~
-@540 = ~Perhaps you would like to see to the rest of my cleanliness tonight? ~
+@540 = ~Perhaps you would like to see to the rest of my cleanliness tonight?~
 @541 = ~(Pleased at how nicely Sola is picking up on surfacer banter, you grin wickedly and assure him you will be more than happy to see to it that every part of his body is completely clean when you stop for the eve.)~
 @542 = ~Being a Drow, I never thought that I would hear those words directed at me. Know this, beloved <CHARNAME>, I am overjoyed that the first time I hear these words, they come from you. Also, it gives me no end of pleasure that I can say I love you as well, with all my heart and soul.~
 @543 = ~<CHARNAME>. (He responds lovingly and draws you into his embrace.)~
