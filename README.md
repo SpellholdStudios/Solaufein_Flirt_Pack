@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)
 
-<div align="center"><h1>Solaufein Flirt Pack for the Solaufein Romance Modification (WIP)</h1>
+<div align="center"><h1>Solaufein Flirt Pack for the Solaufein Romance Modification</h1>
 
 <h3>A mod hosted by Spellhold Studios for Baldur's Gate II: SoA and ToB (classical and EE games),<br>
 Baldur's Gate Trilogy and EET<h3>
@@ -12,13 +12,13 @@ Baldur's Gate Trilogy and EET<h3>
 
 
 **Author:** Jolyth  
-**Mod Website:** <a href="http://www.shsforums.net/forum/234-miscellaneous-released-mods/">Spellhold Studios</a>  
-**Mod Forum:** <a href="http://www.shsforums.net/topic/60737-super-firkraag-updated-to-v16-ee-compatible/">Super Firkraag</a>  
+**Mod Website:** <a href="http://www.shsforums.net/forum/127-mod-resurrections/">Spellhold Studios</a>  
+**Mod Forum:** <a href="http://www.shsforums.net/topic/60747-solaufein-flirt-pack-for-the-solaufein-romance-updated-to-v12/">Solaufein Flirt Pack</a>  
 
 
-[Read the mod's readme](http://spellholdstudios.github.io/readmes/rpgsolaflirt-readme-english.txt)
+[Read the mod's readme](http://spellholdstudios.github.io/readmes/rpgsolaflirt-readme-english.html)
 
-[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1257-super-firkraag/).<br>
+[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1258-solaufein-flirt-pack-for-the-solaufein-romance-mod/)
 
 &nbsp;
 
@@ -43,6 +43,7 @@ For the original Solaufein Romance Mod, which includes all of his background inf
 
 :warning: **Warning: This mod is rated NC17** :innocent:
 
+&nbsp;
 
 <details><summary>Original note from the author</summary>
 <p>
@@ -60,7 +61,7 @@ For the original Solaufein Romance Mod, which includes all of his background inf
 
 This mod is designed to work on the following Infinity Engine games: the original Baldur's Gate II (BG2 or just SoA) with or without the Throne of Bhaal (ToB) expansion, Baldur's Gate II: Enhanced Edition (BG2:EE), the conversion projects <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
 
-Solaufein Flirt Pack is a WeiDU mod, and therefore should be compatible with all WeiDU mods. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/topic/60737-super-firkraag-updated-to-v16-ee-compatible/">report them on the forum</a>!
+Solaufein Flirt Pack is a WeiDU mod, and therefore should be compatible with all WeiDU mods. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/topic/60747-solaufein-flirt-pack-for-the-solaufein-romance-updated-to-v12/">report them on the forum</a>!
 
 >Although it is not required for the Solaufein Flirt Pack mod to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 <div align="right"><a href="#top">Back to top</a></div>
@@ -86,6 +87,8 @@ Solaufein Flirt Pack is a WeiDU mod, and therefore should be compatible with all
 The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
 ## 
+
+#### Windows
 
 Solaufein Flirt Pack for Windows is distributed as an extractable compressed archive and includes a WeiDU installer.
 
@@ -128,7 +131,7 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="credits" id="credits"></a>Credits and Acknowledgements
 
-**Author:** Jolyth  
+**Author:** <a href="http://www.shsforums.net/user/1985-jolyth/">Jolyth</a>  
 
 ## 
 
@@ -178,22 +181,37 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="versions" id="versions"></a>Version History
 
-#### Version 1.2
+#### Version 1.2 (12 April 2020)
 
+- Added *rpgsolaflirtpack.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-rpgsolaflirtpack.tp2* -> *rpgsolaflirtpack.tp2* to support AL|EN's "Project Infinity".
+- Replaced `AUTHOR` keyword with `SUPPORT`.
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games and if *Weimer's Solaufein Romance Mod* is not installed.
 - Added component `DESIGNATED` number and "*solaufein_flirt_pack*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
-- Gwendolyne's workaround to fix the no-initiating flirt options when clicking on Solaufein for the first time: not tested in game. :anguished:
+- Removed *rpgsolaflirtpack.rpgd* marked file.
+- Added native BG2:EE and EET compatibilities.
+- Added jastey's compatibility improvements with Weimer's and other scripting stuff:
+    - Added "*InParty(Myself) See(Player1) !ActuallyInCombat() !See([ENEMY])*" to all script blocks, so they do not interrupt fighting orders.
+    - Removed script block to reset timer while in combat. No script blocks should be executed during combat as they interrupt Solaufein's fighting.
+    - Added "*!StateCheck(Myself,CD_STATE_NOTVALID) !StateCheck(Player1,CD_STATE_NOTVALID)*" to all script blocks that trigger dialogues. (replaced *STATE_SLEEPING*)
+    - Removed wrong randomNum in PIDs.
+    - "*Hug Solaufein*" in town will only play once. Detection of town via script toggle variable "*RPGSolaFlirtSOA_Inside Town*".
+    - PID from original Solaufein mod will be added to Flirts-PIDs. This way, no possibilities to communicate with Solaufein (e.g. skip the hart fight) will be lost.
+    - Removed unnecessary trigger variables from Solaufein initiated flirt dialogues (trigger dialogues by the trigger variable only).
+    - PID flirt "*buy Solaufein a drink*" inside tavern will only be available once.
+- Added Gwendolyne's workaround to fix the no-initiating flirt options when clicking on Solaufein for the first time: not tested in game. :anguished:
 - tp2 file: replaced old-school `DECOMPILE_DLG_TO_D` plus `COMPILE_D_TO_DLG` process with more accurate `DECOMPILE_AND_PATCH` command.
 - Included BWP Fixpack hotfixes:
     - rpgsola.baf: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-10#entry483544">Lollorian's corrected AreaCheck</a>.
 	- rpgsolaflirts.d: <a href="http://www.shsforums.net/topic/42220-fixes-for-the-big-fixpack/page-17#entry488705">Lollorian's corrected AreaCheck</a>.
-	- rpgsolaflirts.tra: replaced wrong token "*&lt;CHARNAME.&gt;*" with "*&lt;CHARNAME&gt;.*" (@433).
+	- rpgsolaflirts.tra: replaced wrong token "*&lt;CHARNAME.&gt;*" with "*&lt;CHARNAME&gt;.*" (@433).
 - rpgsolaflirts.tra: got rid of all special characters that may cause glitches in a few foreign languages.
+- Wrote a new *rpgsolaflirtpack-readme-english.html* readme file and moved it into new *readme* folder.
 - Removed useless backup folder.
 - Reorganized mod architecture tree: created "*lang*" and "*files*" folders to sort files according to their types.
 - Lower cased files.
+- Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Updated WeiDU installer to v246.
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 

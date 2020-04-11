@@ -13,7 +13,9 @@ THEN
 		RealSetGlobalTimer("RPGSolaFlirt","GLOBAL",300)
 END
 
-//outside town?
+/* --------------- *
+ *  outside town?  *
+ * --------------- */
 IF
 	Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",1)
 	!AreaCheck("AR0700")
@@ -41,7 +43,9 @@ THEN
 		SetGlobal("RPGSolaFlirtSOA_Inside Town","GLOBAL",0)
 END
 
-// Detect: inside a town?
+/* ------------------------ *
+ *  Detect: inside a town?  *
+ * ------------------------ */
 IF
 	Global("RPGSolaFlirtSOA_Inside Town","GLOBAL",0)
 	OR(12)
