@@ -16,7 +16,7 @@ Baldur's Gate Trilogy and EET<h3>
 **Mod Forum:** <a href="http://www.shsforums.net/topic/60747-solaufein-flirt-pack-for-the-solaufein-romance-updated-to-v12/">Solaufein Flirt Pack</a>  
 
 
-[Read the mod's readme](http://spellholdstudios.github.io/readmes/rpgsolaflirt-readme-english.html)
+[Read the mod's readme](http://spellholdstudios.github.io/readmes/rpgsolaflirtpack-readme-english.html)
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1258-solaufein-flirt-pack-for-the-solaufein-romance-mod/)
 
