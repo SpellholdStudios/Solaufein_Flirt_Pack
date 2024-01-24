@@ -85,7 +85,7 @@ COPY_EXISTING ~sola.dlg~ ~override~
 		REPLACE_TEXTUALLY "IF ~True()~ \(THEN BEGIN 130\)" "IF ~False()~ \1"
 	END
 */
-OUTER_SET SolaState130 = STATE_WHICH_SAYS 229 IN ~solarom/%s/sola.tra~ FROM SOLA
+OUTER_SET SolaState130 = STATE_WHICH_SAYS 229 IN ~solaufein/%s/sola.tra~ FROM SOLA
 ACTION_IF SolaState130 >= 0 BEGIN	// Compiles only in case STATE_WHICH_SAYS throws a valid value
 	<<<<<<<< rpgsolaflirtpack/alter_sola.d
 REPLACE_STATE_TRIGGER sola %SolaState130% ~False()~
