@@ -1,3 +1,8 @@
+<hr>
+
+:warning: **The maintenance and support of this project has been moved to a [new repository](https://github.com/Spellhold-Studios/Solaufein-Flirt-Pack).**
+
+<hr><br>
 
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Solaufein_Flirt_Pack?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
@@ -48,7 +53,7 @@ For the original Solaufein Romance Mod, which includes all of his background inf
 <details><summary>Original note from the author</summary>
 <p>
 
-###### You know you want it! You know that you have been waiting for it! You have been playing the mod for what seems like forever and still you crave more!! Well, now you can have it! Finally, at long last, the Solaufein Flirt Pack is on its way to completion! Based upon Westley Weimer’s brilliant Solaufein mod, which allowed Baldur’s Gate players to have the Drow elf join their party, this pack is a compilation of the works and ideas of many writers, modders and players, and is an effort to finally complete the flirt pack that was started so long ago. It is being designed to expand upon Weimer’s original romance, without losing the original personality of the character. With the creation of this pack, you will be able to grow closer to the dark elf than you ever have before. You will help Solaufein deal with his decision to leave the Underdark, and find a place for himself on the surface. There will be trials and errors as he learns how to interact in a society that views his kind with anger and mistrust, and you will help him to open up as he explores his new home. The two of you will share an intimacy that you always knew was there… This mod is in progress, but the current feature list includes: - PC to Sola initiated flirts (being coded) - Sola to PC initiated flirts (writing in progress) - More banters with other NPCs (planning stage) - Option to continue romance without sleeping with Sola (planning stage) For more information and progress reports on the mod, or if you wish to contribute, please visit the Solaufein forum here. 
+###### You know you want it! You know that you have been waiting for it! You have been playing the mod for what seems like forever and still you crave more!! Well, now you can have it! Finally, at long last, the Solaufein Flirt Pack is on its way to completion! Based upon Westley Weimerâ€™s brilliant Solaufein mod, which allowed Baldurâ€™s Gate players to have the Drow elf join their party, this pack is a compilation of the works and ideas of many writers, modders and players, and is an effort to finally complete the flirt pack that was started so long ago. It is being designed to expand upon Weimerâ€™s original romance, without losing the original personality of the character. With the creation of this pack, you will be able to grow closer to the dark elf than you ever have before. You will help Solaufein deal with his decision to leave the Underdark, and find a place for himself on the surface. There will be trials and errors as he learns how to interact in a society that views his kind with anger and mistrust, and you will help him to open up as he explores his new home. The two of you will share an intimacy that you always knew was thereâ€¦ This mod is in progress, but the current feature list includes: - PC to Sola initiated flirts (being coded) - Sola to PC initiated flirts (writing in progress) - More banters with other NPCs (planning stage) - Option to continue romance without sleeping with Sola (planning stage) For more information and progress reports on the mod, or if you wish to contribute, please visit the Solaufein forum here. 
 </p>
 </details><br>
 <div align="right"><a href="#top">Back to top</a></div>
@@ -137,7 +142,7 @@ In addition to the methods above for removing individual components, you can com
 
 #### Special Acknowledgements to:
 
-- Extra special thanks goes to Weimer, who not only sparked the interest in Solaufein, but helped to redefine the Baldur’s Gate world with his creation of WeiDU.
+- Extra special thanks goes to Weimer, who not only sparked the interest in Solaufein, but helped to redefine the Baldurâ€™s Gate world with his creation of WeiDU.
 - Additionally, this flirt pack never would have come about without the interest and dedication of those people who started the idea so many years ago. Since I cannot name all of them, I will simply say thank you to them along with a special acknowledgement to those who put in the time and effort on this project. The RPG Solaufein Crew:
     - Jyzabal: Flirt Writer/Sanity Keeper.
     - Noctalys: Flirt Writer/Threat Maker.
@@ -145,7 +150,7 @@ In addition to the methods above for removing individual components, you can com
     - Mistress Elysia: Flirt Writer/Ghostly Presence.
     - Alatariel: Flirt Writer/Patience Itself.
     - Rastor: Omnipresent Authority Figure (even though he is listed last. :stuck_out_tongue:)
-- Thank you very much to the <a href="www.darkpoetry.com">Dark Poetry site</a> and the writers at the site who’s works are included in the pack:
+- Thank you very much to the <a href="www.darkpoetry.com">Dark Poetry site</a> and the writers at the site whoâ€™s works are included in the pack:
     - <a href="http://www.darkpoetry.com/dp/15097/94685#work">Ascension</a> by MoonMoth.
     - <a href="http://www.darkpoetry.com/dp/12684/94568#work">When the Sunlight Disappears</a> By Red.
 
